@@ -1,0 +1,21 @@
+{
+  "name": "HTML Codespace (with Live Server)",
+  "forwardPorts": [
+    5500
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ritwickdey.LiveServer", // Live Server for HTML preview
+        "ms-vscode.live-server", // fallback if primary id changes
+        "ecmel.vscode-html-css", // HTML + CSS intellisense
+        "esbenp.prettier-vscode", // Code formatter
+      ],
+      "settings": {
+        "liveServer.settings.port": 5500,
+        "editor.formatOnSave": true
+      }
+    }
+  },
+  "postCreateCommand": "npm install -g serve"
+}
